@@ -36,6 +36,11 @@ body{
 .bill-label{
   margin-top: 5%;  
   margin-left: 3%;
+  
+}
+label{
+    color:hsl(186, 14%, 43%);
+    font-weight: 600;
 }
 .bill-input{
    margin-top: 2%;
@@ -50,8 +55,9 @@ body{
    font-size: 24px;
    background-color: #f0f8ff;
    outline:none;
-   font-weight: 800;
-   text-align: right ;
+    text-align: right ;
+   color: hsl(183, 100%, 15%);
+   font-weight: 700;
 }
 .bill-input:focus{
     outline:none;
@@ -93,7 +99,8 @@ button{
 }
 .custom{
     background-color: #f0f8ff;
-    color:black;  
+    color:hsl(183, 100%, 15%) ;
+ 
 }
 .people{
      margin-left: 3%;
@@ -113,7 +120,8 @@ button{
     outline:none;
     font-weight: 800;
     text-align: right ;
- 
+    color:hsl(183, 100%, 15%) ;
+
 }
 .right-panel{
     margin-top:4%;
@@ -146,8 +154,11 @@ button{
     text-align: left ;
     color:#f0f8ff;
 }
+.person{
+  color: hsl(185, 41%, 84%);
+}
 .reset{
-    margin-top: 80px;
+    margin-top: 90px;
     width:300px;
     height:50px;
     border:none;
@@ -157,7 +168,39 @@ button{
     font-weight: 800;
     text-align: center;
    cursor:pointer;
+   color:hsl(183, 100%, 15%) ;
+
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (min-width: 375px) {
+    body{
+        width:100%;
+    }
+    .logo{
+        margin-top:38px;
+        margin-bottom: 38px;
+        text-align:center;  
+      }
+      .calculator-panel{
+        margin:0 auto;
+        width:100%;
+        height:auto;
+        background-color: white; 
  
+         }
+         .left-panel{
+            margin-top:4%;
+            margin-left: 3%;
+            width: 100%;
+            height:400px;
+             float:none;
+        }
+        .right-panel{
+            margin-top:4%;
+            margin-right: 3%;
+            width: 100%;
+            height:400px;
+           float: none; 
+            }
+}
