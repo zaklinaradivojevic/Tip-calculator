@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
@@ -14,30 +17,39 @@
 </head>
 
 <body>
-<!------------------------
-  Bill
+  <div class="logo">
+    <img
+      src="https://raw.githubusercontent.com/zaklinaradivojevic/Tip-calculator/b24e3a67e192e91bc01aea90a82c922872eb9ad7/images/logo.svg"
+      alt="logo">
+  </div>
+  <div class="calculator-panel">
+    <div class="left-panel">
+      <label class="bill-label" for="bill-input">Bill </label>
+      <input class="bill-input" id="bill" type="number" placeholder="" name="">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-------------------------------->
+      <label class="select">Select Tip %</label>
+      <div class="btn-panel">
+        <button>5%</button>
+        <button >10%</button>
+        <button class="petnest">15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <button class="custom">Custom</button>
+      </div>
+      <label>Number of people</label>
+      <input>
+    </div>
+    <div class="right-panel">
+      <div class="output">
+        <input>
+        <input>
+        <button>RESET</button>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Zaklina Radivojevic</a>.
   </div>
   <script src="index.js"></script>
 </body>

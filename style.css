@@ -1,3 +1,106 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+  width:100%;
+  height:100%;  
+}
+body{
+    width: 100%;
+    height:100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: #C6E4EE;
+}
+.logo{
+  margin-top:151px;
+  margin-bottom: 75.6px;
+  text-align:center;  
+}
+.calculator-panel{
+  margin:0 auto;
+  width:940px;
+  height:480px;
+  background-color: white; 
+  margin-bottom: 226px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px -2px rgba(76, 104, 131, 0.9);
+}
+.left-panel{
+    margin-top:4%;
+    margin-left: 3%;
+    width: 400px;
+    height:400px;
+   float:left;
+}
+.bill-label{
+  margin-top: 5%;  
+  margin-left: 3%;
+}
+.bill-input{
+   margin-top: 2%;
+   margin-left: 3%;
+   margin-bottom:50px;
+   width:340px;
+   height:38px;
+    background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/Tip-calculator/b24e3a67e192e91bc01aea90a82c922872eb9ad7/images/icon-dollar.svg"); 
+   background-repeat: no-repeat;
+   background-position: left;
+   border:none;
+   font-size: 24px;
+   background-color: #f0f8ff;
+   outline:none;
+   font-weight: 800;
+   text-align: right ;
+}
+.bill-input:focus{
+    outline:none;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 10px;
+}
+.select{
+    margin-left: 3%;  
+    margin-bottom: 3%;
+}
+.btn-panel{
+    margin-left: 3%;  
+    margin-bottom: 3%;
+    width:400px;
+    height:200px;
+    display: block;
+}
+button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+   width:113px; 
+   height:38px;
+   background-color:hsl(183, 100%, 15%) ;
+   color:white;
+   border:none;
+   font-size: 24px;
+   font-weight: 700;
+}
+.petnest{
+    background-color: hsl(172, 67%, 45%);
+}
+.custom{
+    background-color: #f0f8ff;
+    color:black;  
+}
+.right-panel{
+    margin-top:4%;
+    margin-right: 3%;
+    width: 400px;
+    height:400px;
+   float: right; 
+   background-color:hsl(183, 100%, 15%) ;
+   border-radius: 20px;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
  
