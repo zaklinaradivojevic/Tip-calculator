@@ -25,25 +25,25 @@
   <div class="calculator-panel">
     <div class="left-panel">
       <label class="bill-label" for="bill-input">Bill </label>
-      <input class="bill-input" id="bill" type="number" placeholder="" name="">
+      <input class="bill-input" id="bill" type="number" placeholder="" name="" required>
 
       <label class="select">Select Tip %</label>
       <div class="btn-panel">
         <button>5%</button>
-        <button >10%</button>
+        <button>10%</button>
         <button class="petnest">15%</button>
         <button>25%</button>
         <button>50%</button>
         <button class="custom">Custom</button>
       </div>
-      <label>Number of people</label>
-      <input>
+      <label class="people">Number of people</label>
+      <input class="people-input" id="people" type="number" placeholder="" name="" required>
     </div>
     <div class="right-panel">
       <div class="output">
-        <input>
-        <input>
-        <button>RESET</button>
+        <input class="output1" type="number" placeholder="Tip Amount/person">
+        <input class="output2" type="number" placeholder="Total/person">
+        <button class="reset">RESET</button>
       </div>
     </div>
   </div>

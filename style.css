@@ -71,26 +71,49 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 3%;  
     margin-bottom: 3%;
     width:400px;
-    height:200px;
+    height:150px;
     display: block;
 }
 button{
   margin-top: 10px;
-  margin-bottom: 10px;
-   width:113px; 
-   height:38px;
+  margin-bottom: 5px;
+   width:110px; 
+   height:39px;
    background-color:hsl(183, 100%, 15%) ;
    color:white;
    border:none;
    font-size: 24px;
    font-weight: 700;
+   border-radius: 5px;
+   cursor:pointer;
 }
 .petnest{
     background-color: hsl(172, 67%, 45%);
+    color:hsl(183, 100%, 15%) ;
 }
 .custom{
     background-color: #f0f8ff;
     color:black;  
+}
+.people{
+     margin-left: 3%;
+    
+}
+.people-input{
+    margin-top: 2%;
+    margin-left: 3%;
+    width:340px;
+    height:38px;
+     background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/Tip-calculator/9b7d3cdc20e98ac30879f66eb9f070e0c4c14a79/images/icon-person.svg"); 
+    background-repeat: no-repeat;
+    background-position: left;
+    border:none;
+    font-size: 24px;
+    background-color: #f0f8ff;
+    outline:none;
+    font-weight: 800;
+    text-align: right ;
+ 
 }
 .right-panel{
     margin-top:4%;
@@ -100,6 +123,35 @@ button{
    float: right; 
    background-color:hsl(183, 100%, 15%) ;
    border-radius: 20px;
+}
+.output{
+   width: 300px;
+   height:300px;
+   place-content: center;
+}
+.output1{
+    margin-top: 5%;
+    width:340px;
+    height:38px;
+    border:none;
+    font-size: 24px;
+    background-color: #f0f8ff;
+    outline:none;
+    font-weight: 800;
+    text-align: right ;
+ 
+}
+.output2{
+    margin-top: 5%;
+    width:340px;
+    height:38px;
+    border:none;
+    font-size: 24px;
+    background-color: #f0f8ff;
+    outline:none;
+    font-weight: 800;
+    text-align: right ;
+ 
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
