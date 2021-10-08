@@ -125,26 +125,27 @@ button{
    border-radius: 20px;
 }
 .output{
-   width: 300px;
-   height:300px;
-   place-content: center;
-}
+    top:5%;
+    margin:0 auto;
+    width: 300px;
+    height:300px;
+   }
 .output1{
-    margin-top: 5%;
-    width:340px;
-    height:38px;
+    margin-top: 60px;
+    width:300px;
+    height:50px;
     border:none;
     font-size: 24px;
-    background-color: #f0f8ff;
+    background-color:#f0f8ff;
     outline:none;
     font-weight: 800;
     text-align: right ;
  
 }
 .output2{
-    margin-top: 5%;
-    width:340px;
-    height:38px;
+    margin-top: 50px;
+    width:300px;
+    height:50px;
     border:none;
     font-size: 24px;
     background-color: #f0f8ff;
@@ -152,6 +153,18 @@ button{
     font-weight: 800;
     text-align: right ;
  
+}
+.reset{
+    margin-top: 80px;
+    width:300px;
+    height:50px;
+    border:none;
+    font-size: 24px;
+    background-color: hsl(172, 67%, 45%);
+    outline:none;
+    font-weight: 800;
+    text-align: center;
+   cursor:pointer;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
