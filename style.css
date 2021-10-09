@@ -4,11 +4,11 @@
 }
 html{
   width:100%;
-  height:100%;  
+  height:170vh;  
 }
 body{
     width: 100%;
-    height:100vh;
+    height:170vh;
     font-family: 'Space Mono', monospace;
     background-color: #C6E4EE;
 }
@@ -173,34 +173,177 @@ button{
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-@media only screen and (min-width: 375px) {
+
+@media screen and (max-width: 375px){
     body{
-        width:100%;
+        width: 100%;
+        height:100vh;
+        font-family: 'Space Mono', monospace;
+        background-color: #C6E4EE;
     }
     .logo{
-        margin-top:38px;
-        margin-bottom: 38px;
-        text-align:center;  
-      }
-      .calculator-panel{
+      margin-top:37px;
+      margin-bottom: 37px;
+      text-align:center;  
+    }
+    .calculator-panel{
+      margin:0 auto;
+      width:100%;
+      height:auto;
+      background-color: white; 
+      margin-bottom: 226px;
+      border-radius: 20px;
+      position: absolute;
+      box-shadow: 0 4px 20px -2px rgba(76, 104, 131, 0.9);
+    }
+    .left-panel{
+        margin-top:25px;
+        margin-left: 3%;
+        width: 50%;
+        height:400px;
+       float:none;
+       position: relative;
+    }
+    .bill-label{
+      margin-top: 5%;  
+      margin-left: 3%;
+      
+    }
+    label{
+        color:hsl(186, 14%, 43%);
+        font-weight: 600;
+    }
+    .bill-input{
+       margin-top: 2%;
+       margin-left: 3%;
+       margin-bottom:50px;
+       width:340px;
+       height:38px;
+        background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/Tip-calculator/b24e3a67e192e91bc01aea90a82c922872eb9ad7/images/icon-dollar.svg"); 
+       background-repeat: no-repeat;
+       background-position: left;
+       border:none;
+       font-size: 24px;
+       background-color: #f0f8ff;
+       outline:none;
+        text-align: right ;
+       color: hsl(183, 100%, 15%);
+       font-weight: 700;
+    }
+    .bill-input:focus{
+        outline:none;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 10px;
+    }
+    .select{
+        margin-left: 3%;  
+        margin-bottom: 3%;
+    }
+    .btn-panel{
+        margin-left: 3%;  
+        margin-bottom: 3%;
+        width:350px;
+        height:200px;
+        display: block;
+    }
+    button{
+      margin-top: 10px;
+      margin-bottom: 5px;
+       width:110px; 
+       height:39px;
+       background-color:hsl(183, 100%, 15%) ;
+       color:white;
+       border:none;
+       font-size: 24px;
+       font-weight: 700;
+       border-radius: 5px;
+       cursor:pointer;
+    }
+    .petnest{
+        background-color: hsl(172, 67%, 45%);
+        color:hsl(183, 100%, 15%) ;
+    }
+    .custom{
+        background-color: #f0f8ff;
+        color:hsl(183, 100%, 15%) ;
+     
+    }
+    .people{
+         margin-left: 3%;
+        
+    }
+    .people-input{
+        margin-top: 2%;
+        margin-left: 3%;
+        width:340px;
+        height:38px;
+         background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/Tip-calculator/9b7d3cdc20e98ac30879f66eb9f070e0c4c14a79/images/icon-person.svg"); 
+        background-repeat: no-repeat;
+        background-position: left;
+        border:none;
+        font-size: 24px;
+        background-color: #f0f8ff;
+        outline:none;
+        font-weight: 800;
+        text-align: right ;
+        color:hsl(183, 100%, 15%) ;
+    
+    }
+    .right-panel{
+        margin-top:4%;
+        margin-right: 3%;
+        width: 100%;
+        height:400px;
+       float: none; 
+       background-color:hsl(183, 100%, 15%) ;
+       border-radius: 20px;
+    }
+    .output{
+        margin-top:15px;
         margin:0 auto;
+        width: 75%;
+        height:300px;
+        position:relative;
+       }
+    .output1{
+        margin-top: 60px;
+        width:340px;
+        height:50px;
+        color:#f0f8ff;
+        text-align: left ;
+     
+    }
+    .output2{
+        margin-top: 50px;
+        width:300px;
+        height:50px;
+        border:none;
+        text-align: left ;
+        color:#f0f8ff;
+    }
+    .person{
+      color: hsl(185, 41%, 84%);
+    }
+    .reset{
+        margin-top: 90px;
         width:100%;
-        height:auto;
-        background-color: white; 
- 
-         }
-         .left-panel{
-            margin-top:4%;
-            margin-left: 3%;
-            width: 100%;
-            height:400px;
-             float:none;
-        }
-        .right-panel{
-            margin-top:4%;
-            margin-right: 3%;
-            width: 100%;
-            height:400px;
-           float: none; 
-            }
-}
+        height:50px;
+        border:none;
+        font-size: 24px;
+        background-color: hsl(172, 67%, 45%);
+        outline:none;
+        font-weight: 800;
+        text-align: center;
+       cursor:pointer;
+       color:hsl(183, 100%, 15%) ;
+    
+    }
+    .attribution { font-size: 11px; text-align: center;position: absolute;top:160vh;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  }
