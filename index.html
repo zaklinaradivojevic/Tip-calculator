@@ -23,23 +23,24 @@
       alt="logo">
   </div>
   <div class="calculator-panel">
-    <div class="left-panel">
-      <label class="bill-label" for="bill-input">Bill </label>
-      <input class="bill-input" id="bill" type="number" placeholder="" name="" required>
+    <form id="myFunction">
+      <div class="left-panel">
+        <label class="bill-label">Bill </label>
+        <input class="bill-input" id="bill" type="number" required>
 
-      <label class="select">Select Tip %</label>
-      <div class="btn-panel">
-        <button>5%</button>
-        <button>10%</button>
-        <button class="petnest">15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button class="custom">Custom</button>
+        <label class="select">Select Tip %</label>
+        <div class="btn-panel">
+          <button onclick="getValue5()">5%</button>
+          <button onclick="getValue10()">10%</button>
+          <button class="petnest" onclick="getValue15()">15%</button>
+          <button onclick="getValue25()">25%</button>
+          <button onclick="getValue50()">50%</button>
+          <button class="custom" onclick="getValueCustom()">Custom</button>
+        </div>
+        <label class="people">Number of people</label>
+        <input class="people-input" id="people" type="number" required>
       </div>
-      <label class="people">Number of people</label>
-      <input class="people-input" id="people" type="number" placeholder="" name="" required>
-    </div>
-    <form id-"form" class="form-panel" type="submit">
+
       <div class="right-panel">
         <div class="output">
           <div class="output1">
@@ -53,11 +54,11 @@
             <p class="person">/person</p>
             <h3 id="total"></h3>
           </div>
-          <button class="reset">RESET</button>
+          <button class="reset" onclick="myFunction()">RESET</button>
         </div>
       </div>
+    </form>
   </div>
-  </form>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Zaklina Radivojevic</a>.
