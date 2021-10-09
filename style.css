@@ -172,7 +172,12 @@ button{
 
 }
 #total{
-    color:white;
+    color:hsl(172, 67%, 45%);
+    text-align: right;
+}
+#tip-amount{
+    color:hsl(172, 67%, 45%);
+    text-align: right;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
